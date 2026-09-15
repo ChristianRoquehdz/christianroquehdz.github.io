@@ -3,139 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="HERC Seguridad Privada SAS de CV. Control de accesos, vigilancia y rondines en el Estado de Nuevo León.">
+  <meta name="description" content="HERC Seguridad Privada SAS de CV. Seguridad para fraccionamientos y privadas en Nuevo León: control de accesos, vigilancia y rondines.">
+  <meta name="theme-color" content="#080808">
   <title>HERC Seguridad Privada | Nuevo León</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>SEGURIDAD PRIVADA PARA FRACCIONAMIENTOS Y PRIVADAS</span>
+      <a href="tel:+525562163153">55 6216 3153</a>
+    </div>
+  </div>
+
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="#inicio">
+      <a class="brand" href="#inicio" aria-label="HERC Seguridad Privada">
         <img src="logo.jpg" alt="Logotipo HERC Seguridad Privada">
-        <span>HERC <small>SEGURIDAD PRIVADA</small></span>
+        <span><b>HERC</b><small>SEGURIDAD PRIVADA</small></span>
       </a>
-      <nav>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="nav-links">
         <a href="#servicios">Servicios</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#cobertura">Cobertura</a>
-        <a href="#contacto" class="nav-cta">Cotizar</a>
+        <a href="#contacto" class="nav-cta">Solicitar cotización</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="inicio" class="hero" style="background-image:linear-gradient(90deg,rgba(5,5,5,.94) 0%,rgba(5,5,5,.76) 50%,rgba(80,0,0,.45) 100%),url('https://origenlab.com/img/seguridad-privada/origins/seguridad-privada-residencial-condominios-origins.webp');">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
+    <section id="inicio" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">SEGURIDAD PRIVADA · NUEVO LEÓN</p>
-          <h1>Más que vigilancia,<br><strong>brindamos tranquilidad.</strong></h1>
-          <p class="lead">Protección profesional para fraccionamientos, privadas y comunidades que buscan control, prevención y confianza.</p>
-          <div class="actions">
-            <a class="btn btn-gold" href="https://wa.me/525562163153" target="_blank" rel="noopener">Solicitar cotización por WhatsApp</a>
-            <a class="btn btn-outline" href="#servicios">Conocer servicios</a>
+          <div class="badge"><span></span> SERVICIO EN NUEVO LEÓN</div>
+          <h1>Más que vigilancia,<br><em>brindamos tranquilidad.</em></h1>
+          <p class="hero-text">Protección profesional para fraccionamientos, privadas y comunidades. Control, presencia preventiva y atención enfocada en la seguridad de sus residentes.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="https://wa.me/525562163153?text=Hola%20HERC%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20de%20seguridad%20para%20mi%20fraccionamiento." target="_blank" rel="noopener">Cotizar por WhatsApp <span>↗</span></a>
+            <a class="btn btn-light" href="#servicios">Ver servicios</a>
+          </div>
+          <div class="hero-trust">
+            <div><strong>24/7</strong><span>Enfoque preventivo</span></div>
+            <div><strong>3</strong><span>Servicios principales</span></div>
+            <div><strong>NL</strong><span>Cobertura estatal</span></div>
           </div>
         </div>
-        <div class="hero-card">
-          <img src="logo.jpg" alt="HERC Seguridad Privada">
-          <p>Protección con presencia, prevención y respuesta.</p>
+        <div class="hero-visual">
+          <div class="hero-photo">
+            <img src="https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=1100&q=85" alt="Seguridad y control de acceso residencial">
+            <div class="photo-overlay"></div>
+            <div class="logo-stamp"><img src="logo.jpg" alt="HERC"></div>
+            <div class="photo-caption"><span>HERC</span><strong>Protección con presencia</strong></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="servicios" class="section">
+    <section id="servicios" class="section services">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">NUESTROS SERVICIOS</p>
-          <h2>Seguridad pensada para tu comunidad</h2>
-          <p>Adaptamos la operación de seguridad a las necesidades de cada fraccionamiento o privada.</p>
+        <div class="section-head centered">
+          <span class="kicker">NUESTROS SERVICIOS</span>
+          <h2>Seguridad diseñada para tu comunidad</h2>
+          <p>Una operación clara para fortalecer el control, la prevención y la tranquilidad dentro de tu fraccionamiento.</p>
         </div>
-        <div class="cards">
-          <article class="card">
-            <div class="icon">01</div>
-            <h3>Control de accesos</h3>
-            <p>Control y supervisión de entradas y salidas de residentes, visitantes, proveedores y vehículos.</p>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=900&q=80" alt="Control de acceso residencial"><span>01</span></div>
+            <div class="service-body"><div class="service-icon">⌂</div><h3>Control de accesos</h3><p>Supervisión de entradas y salidas de residentes, visitantes, proveedores y vehículos.</p></div>
           </article>
-          <article class="card">
-            <div class="icon">02</div>
-            <h3>Vigilancia</h3>
-            <p>Presencia preventiva y vigilancia enfocada en proteger a residentes, instalaciones y áreas comunes.</p>
+          <article class="service-card featured">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=80" alt="Vigilancia y seguridad"><span>02</span></div>
+            <div class="service-body"><div class="service-icon">◉</div><h3>Vigilancia</h3><p>Presencia preventiva y supervisión orientada a proteger residentes, instalaciones y áreas comunes.</p></div>
           </article>
-          <article class="card">
-            <div class="icon">03</div>
-            <h3>Rondines</h3>
-            <p>Recorridos preventivos para detectar situaciones de riesgo y mantener una presencia constante.</p>
+          <article class="service-card">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=900&q=80" alt="Rondines preventivos"><span>03</span></div>
+            <div class="service-body"><div class="service-icon">↻</div><h3>Rondines</h3><p>Recorridos preventivos para mantener presencia constante y detectar situaciones de riesgo.</p></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="nosotros" class="section dark">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">HERC SEGURIDAD PRIVADA SAS DE CV</p>
-          <h2>Tu tranquilidad comienza con una seguridad bien organizada.</h2>
+    <section id="nosotros" class="section about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1100&q=85" alt="Atención profesional y servicio de seguridad">
+          <div class="about-badge"><img src="logo.jpg" alt="HERC"><span>HERC<br><small>SEGURIDAD PRIVADA</small></span></div>
         </div>
-        <div>
-          <p>Ofrecemos soluciones de seguridad privada enfocadas en fraccionamientos y privadas del Estado de Nuevo León.</p>
-          <p>Nuestro objetivo es brindar una presencia profesional que ayude a prevenir incidentes, fortalecer el control de accesos y mantener la tranquilidad de los residentes.</p>
+        <div class="about-copy">
+          <span class="kicker">HERC SEGURIDAD PRIVADA SAS DE CV</span>
+          <h2>Presencia profesional para una comunidad más tranquila.</h2>
+          <p>Brindamos servicios de seguridad privada enfocados en fraccionamientos, privadas y comunidades del Estado de Nuevo León.</p>
+          <p>Nuestra propuesta integra control de accesos, vigilancia y rondines en una operación enfocada en la prevención y el orden.</p>
+          <div class="check-list">
+            <div><span>✓</span><p>Atención enfocada en comunidades residenciales</p></div>
+            <div><span>✓</span><p>Control y supervisión de accesos</p></div>
+            <div><span>✓</span><p>Presencia preventiva y rondines</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="cobertura" class="section coverage">
-      <div class="container coverage-box">
+    <section id="cobertura" class="coverage">
+      <div class="container coverage-inner">
         <div>
-          <p class="eyebrow">COBERTURA</p>
-          <h2>Servicio en el Estado de Nuevo León</h2>
+          <span class="kicker">COBERTURA</span>
+          <h2>Nuevo León</h2>
           <p>Consulta disponibilidad para tu fraccionamiento, privada o comunidad.</p>
         </div>
-        <a class="btn btn-dark" href="https://wa.me/525562163153" target="_blank" rel="noopener">Hablar con un asesor</a>
+        <a class="btn btn-dark" href="https://wa.me/525562163153?text=Hola%20HERC%2C%20quisiera%20consultar%20la%20disponibilidad%20de%20servicio%20en%20mi%20fraccionamiento." target="_blank" rel="noopener">Consultar disponibilidad <span>↗</span></a>
       </div>
     </section>
 
-    <section class="section gallery-placeholder">
+    <section class="section gallery">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">SEGURIDAD RESIDENCIAL</p>
+        <div class="section-head">
+          <span class="kicker">SEGURIDAD RESIDENCIAL</span>
           <h2>Protección donde más importa</h2>
-          <p>Mientras nos compartes tus fotografías oficiales, utilizamos imágenes de referencia para mostrar cómo se verá la página. Las sustituiremos por material de HERC posteriormente.</p>
+          <p>Estas imágenes son de referencia. Cuando nos compartas las fotografías de tus guardias y unidades, las sustituimos para mostrar la operación real de HERC.</p>
         </div>
-        <div class="photo-grid">
-          <figure class="photo-card">
-            <img src="https://origenlab.com/img/seguridad-privada/gupri/patrullaje-vigilancia-condominios-gupri.webp" alt="Vigilancia y rondines en fraccionamiento">
-            <div class="photo-shade"></div>
-            <img class="logo-badge" src="logo.jpg" alt="HERC">
-            <figcaption>Vigilancia y rondines</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="https://origenlab.com/img/seguridad-privada/seprico/control-de-accesos-seguridad-privada-seprico.webp" alt="Control de acceso residencial">
-            <div class="photo-shade"></div>
-            <img class="logo-badge" src="logo.jpg" alt="HERC">
-            <figcaption>Control de accesos</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="https://paginasamarillas.mx/img/img-seguridad-privada/seguridad-caseta-cctv.webp" alt="Guardia de seguridad en caseta">
-            <div class="photo-shade"></div>
-            <img class="logo-badge" src="logo.jpg" alt="HERC">
-            <figcaption>Vigilancia en caseta</figcaption>
-          </figure>
+        <div class="gallery-grid">
+          <div class="gallery-card large"><img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?auto=format&fit=crop&w=1200&q=85" alt="Seguridad residencial"><div><span>01</span><strong>Presencia preventiva</strong></div></div>
+          <div class="gallery-card"><img src="https://images.unsplash.com/photo-1581579185169-1c7d6f0b4f83?auto=format&fit=crop&w=900&q=85" alt="Control y vigilancia"><div><span>02</span><strong>Control y vigilancia</strong></div></div>
+          <div class="gallery-card"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=85" alt="Atención profesional"><div><span>03</span><strong>Servicio profesional</strong></div></div>
         </div>
-        <p class="image-note">Imágenes de referencia obtenidas de sitios públicos; serán reemplazadas por fotografías propias de HERC cuando las compartas.</p>
       </div>
     </section>
 
     <section id="contacto" class="contact">
-      <div class="container contact-inner">
-        <div>
-          <p class="eyebrow">CONTACTO</p>
-          <h2>¿Necesitas seguridad para tu fraccionamiento?</h2>
-          <p>Solicita información y una cotización para conocer una propuesta de servicio.</p>
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="kicker">CONTACTO</span>
+          <h2>Hablemos de la seguridad de tu fraccionamiento.</h2>
+          <p>Solicita información y una cotización. Estamos listos para conocer las necesidades de tu comunidad.</p>
+          <a class="btn btn-gold" href="https://wa.me/525562163153?text=Hola%20HERC%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">Escribir por WhatsApp <span>↗</span></a>
         </div>
-        <div class="contact-box">
-          <a href="https://wa.me/525562163153" target="_blank" rel="noopener"><span>WhatsApp</span><strong>55 6216 3153</strong></a>
-          <a href="tel:+525562163153"><span>Teléfono</span><strong>55 6216 3153</strong></a>
-          <a href="mailto:cpu_19@hotmail.com"><span>Correo electrónico</span><strong>cpu_19@hotmail.com</strong></a>
+        <div class="contact-card">
+          <a href="tel:+525562163153"><small>LLÁMANOS</small><strong>55 6216 3153</strong><span>→</span></a>
+          <a href="https://wa.me/525562163153" target="_blank" rel="noopener"><small>WHATSAPP</small><strong>55 6216 3153</strong><span>→</span></a>
+          <a href="mailto:cpu_19@hotmail.com"><small>CORREO</small><strong>cpu_19@hotmail.com</strong><span>→</span></a>
         </div>
       </div>
     </section>
@@ -143,9 +154,21 @@
 
   <footer>
     <div class="container footer-inner">
-      <div class="footer-brand"><img src="logo.jpg" alt="HERC"><span>HERC Seguridad Privada SAS de CV</span></div>
-      <p>© 2026 HERC Seguridad Privada SAS de CV. Todos los derechos reservados.</p>
+      <a class="footer-brand" href="#inicio"><img src="logo.jpg" alt="HERC"><span>HERC Seguridad Privada SAS de CV</span></a>
+      <p>© 2026 HERC Seguridad Privada SAS de CV · Nuevo León</p>
     </div>
   </footer>
+
+  <a class="floating-wa" href="https://wa.me/525562163153?text=Hola%20HERC%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20seguridad." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">⌕<span>WhatsApp</span></a>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav-links');
+    menuBtn.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open);
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  </script>
 </body>
 </html>
